@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar"
 import ClientOnly from "./components/ClientOnly"
 import RegisterModal from "./components/modals/RegisterModal"
 import ToasterProvider from "./providers/ToasterProvider"
+import LoginModal from "./components/modals/LoginModal"
 
 export const metadata = {
   title: 'myamani',
@@ -27,6 +28,7 @@ export default function RootLayout({
 
         <ClientOnly>
           <ToasterProvider />
+          <LoginModal />
           <RegisterModal />
           <Navbar />
         </ClientOnly>
